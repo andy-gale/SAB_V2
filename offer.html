@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Share A Bite </title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper{
+            height: 100vh;
+            background: linear-gradient(rgba(46, 139, 87, 0.6), rgba(238, 0, 255, 0.3));
+        }
+
+        nav {
+            background-color: seagreen;
+            position: fixed;
+            width: 100%;
+            min-height: 40px;
+            text-align: right;
+        }
+
+        nav li{
+            display: inline-block;
+            margin: 14px;
+        }
+
+        button {
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        }
+        
+        @media screen and (max-width: 600px){
+            nav{
+                text-align: center;
+            }
+        }
+
+        section {
+            padding-top: 80px; 
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li class="links"><a href="index.html"> <button> Home </button> </a></li>
+                <li class="links"><a href="map.html"> <button> Map </button></a></li>
+                <li class="links"><a href="offer.html"> <button> + </button> </a></li>
+                <li class="links"><a href="about.html"> <button> About </button> </a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="map-marked">
+                <img src="images/map_iv.PNG">
+            </div>
+                 
+        </section>
+    </div>
+
+</body>
+</html>
