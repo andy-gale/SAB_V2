@@ -45,7 +45,7 @@
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
             padding: 20px;
         }
@@ -57,11 +57,20 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
             padding: 20px;
+            justify-content: center;
         }
 
         section {
             padding-top: 60px;
+            background: linear-gradient(rgba(46, 139, 87, 0.6), rgba(238, 0, 255, 0.3));
         }
+
+        .product-card img {
+            width: 200px;
+            text-align: center;
+        }
+       
+        
         
 
     </style>
@@ -81,26 +90,32 @@
             <div class="product-grid">
                 <div class="product-card">
                     <h3>Product</h3>
+                    <img src="food1.jpeg">
                     <button> Request </button>
                 </div>
                 <div class="product-card">
                     <h3>Product</h3>
+                    <img src="food2.jpg">
                     <button> Request</button>
                 </div>
                 <div class="product-card">
                     <h3>Product</h3>
+                    <img src="food3.jpg">
                     <button> Request</button>
                 </div>
                 <div class="product-card">
                     <h3>Product</h3>
+                    <img src="food4.jpg">
                     <button> Request</button>
                 </div>
                 <div class="product-card">
                     <h3>Product</h3>
+                    <img src="food5.webp">
                     <button> Request</button>
                 </div>
                 <div class="product-card">
                     <h3>Product</h3>
+                    <img src="food6.jpg">
                     <button> Request</button>
                 </div>
             </div>
