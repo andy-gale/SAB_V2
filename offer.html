@@ -14,8 +14,8 @@
         }
 
         .wrapper{
-            height: 100vh;
-            background: linear-gradient(rgba(46, 139, 87, 0.6), rgba(238, 0, 255, 0.3));
+            height: 100%;
+            background:rgba(46, 139, 87, 0.6);
         }
 
         nav {
@@ -37,17 +37,43 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
         }
         
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 1050px){
             nav{
                 text-align: center;
             }
         }
 
-        section {
-            padding-top: 80px; 
+        @font-face {
+            font-family: 'chalk-custom';
+            src: url(KGTenThousandReasons.ttf);
         }
 
-        
+        .active {
+            background: rgba(255,255,255,0.3);
+            display: inline-block;
+            border-radius: 8px;
+            line-height: 36px;
+        }
+
+        section {
+            padding-top: 60px; 
+            overflow: auto;
+        }
+
+        p {
+            font-family: 'chalk-custom';
+            padding-top: 10px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .map-marked {
+            height: 200%;
+            width: 200%;
+        }
+
 
     </style>
 
@@ -63,10 +89,10 @@
             </ul>
         </nav>
         <section>
+            <p><strong> Select Drop Off Location  </strong></p>
             <div class="map-marked">
                 <img src="map_iv.PNG">
             </div>
-                 
         </section>
     </div>
 

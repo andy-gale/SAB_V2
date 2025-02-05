@@ -14,8 +14,8 @@
         }
 
         .wrapper{
-            height: 100vh;
-            background: linear-gradient(rgba(46, 139, 87, 0.6), rgba(238, 0, 255, 0.3));
+            height: 100%;
+            background:rgba(46, 139, 87, 0.6);
         }
 
         nav {
@@ -43,6 +43,18 @@
             }
         }
 
+        @font-face {
+            font-family: 'chalk-custom';
+            src: url(KGTenThousandReasons.ttf);
+        }
+
+        .active {
+            background: rgba(255,255,255,0.3);
+            display: inline-block;
+            border-radius: 8px;
+            line-height: 36px;
+        }
+
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -58,16 +70,19 @@
             text-align: center;
             padding: 20px;
             justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         section {
             padding-top: 60px;
-            background: linear-gradient(rgba(46, 139, 87, 0.6), rgba(238, 0, 255, 0.3));
         }
 
         .product-card img {
             width: 200px;
             text-align: center;
+            margin: 5px;
         }
        
         
