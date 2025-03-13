@@ -6,6 +6,12 @@
     <title> Share A Bite </title>
 
     <style>
+
+        @font-face {
+            font-family: 'chalk-custom';
+            src: url(KGTenThousandReasons.ttf);
+        }
+
         *{
             margin: 0;
             padding: 0;
@@ -39,7 +45,7 @@
             border: 1px solid transparent;
             padding: 7px 10px;
             border-radius: 15px;
-            font-family: cursive;
+            font-family: 'chalk-custom';
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
         }
 
@@ -49,7 +55,7 @@
         }
 
         h3 {
-            font-family: cursive, fantasy
+            font-family: 'chalk-custom'
         }
         
         @media screen and (max-width: 600px){
@@ -62,10 +68,7 @@
             }
         }
 
-        @font-face {
-            font-family: 'chalk-custom';
-            src: url(KGTenThousandReasons.ttf);
-        }
+
 
         .active {
             background: rgba(255,255,255,0.3);
